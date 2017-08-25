@@ -1,0 +1,40 @@
+<a href="/prepare-browse">Browse</a>
+<p>Customize</p>
+
+
+<p> Tell us a little about yourself</p>
+
+<div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+<form action="/prepare-customize-result" method="post" id="checkout-form">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="vertical">Vertical</label>
+                <input type="text" id="verical" class="form-control" required name="verical">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="your-focus">Your Focus</label>
+                <input type="text" id="your-focus" class="form-control" required name="your-focus">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+
+
+
+<a href="/eat-customize">Eat</a>
+
+<a href="/prepare-customize">Prepare</a>
+
+<a href="/dashboard">Home</a>
+
+<a href="/track">Track</a>

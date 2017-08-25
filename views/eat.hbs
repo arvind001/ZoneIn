@@ -1,0 +1,53 @@
+
+<a href="/eat-browse">Browse</a>
+<!--<a href="/eat-customize">Customize</a>-->
+<p>Customize</p>
+
+
+<p> Tell us a little about yourself</p>
+
+<div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+<form action="/eat-customize-result" method="post" id="checkout-form">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" class="form-control" required name="weight">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="preferred-weight">Preferred Weight</label>
+                <input type="text" id="preferred-weight" class="form-control" required name="preferred-weight">
+            </div>
+        </div>
+        <hr>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="event">Event</label>
+                <input type="text" id="event" class="form-control" required name="event">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="text" id="time" class="form-control" required name="time">
+            </div>
+        </div>
+
+
+    </div>
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+
+
+<a href="/eat-customize">Eat</a>
+
+<a href="/prepare-customize">Prepare</a>
+
+<a href="/dashboard">Home</a>
+
+<a href="/track">Track</a>
